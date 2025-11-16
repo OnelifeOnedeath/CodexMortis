@@ -1,6 +1,6 @@
-FROM python:3.11-alpine
+FROM rust:1.70-alpine
 
 WORKDIR /app
 COPY . .
 
-CMD ["python", "-c", "print('Serpens: Python мудрость активирована!')"]
+CMD ["cargo", "run"]
