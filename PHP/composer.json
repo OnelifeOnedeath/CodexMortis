@@ -1,6 +1,6 @@
 {
     "name": "codexmortis/antiquus",
-    "description": "Antiquus - Древняя мудрость PHP для Codex Mortis",
+    "description": "Antiquus - PHP древняя мудрость",
     "type": "project",
     "require": {
         "php": ">=8.0"
