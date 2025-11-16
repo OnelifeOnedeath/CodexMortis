@@ -10,7 +10,3 @@ services:
   celeritas-go:
     build: ./Go
     container_name: codex-celeritas
-
-  scutum-rust:
-    build: ./Rust  
-    container_name: codex-scutum
