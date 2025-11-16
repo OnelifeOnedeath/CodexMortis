@@ -1,12 +1,18 @@
 fn main() {
-    println!("Scutum: Безопасность и скорость для Codex Mortis!");
+    println!("Scutum: Rust защита для Codex Mortis активирована!");
     println!("Motto: Scutum ex Rust - Securitas Aeterna");
+    
+    match protect_system() {
+        true => println!("🛡️ Система защищена!"),
+        false => println!("⚠️ Ошибка защиты!")
+    }
 }
 
-pub fn protect_system() -> String {
-    String::from("Scutum защищает систему от хаоса")
+fn protect_system() -> bool {
+    println!("Scutum: Анализирую безопасность...");
+    true
 }
 
-pub fn get_latin_motto() -> String {
+fn get_latin_motto() -> String {
     String::from("Rust ex Scuto - Periculum Non Est")
 }
