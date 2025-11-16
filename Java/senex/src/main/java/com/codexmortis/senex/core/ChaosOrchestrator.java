@@ -1,8 +1,12 @@
-package com.codexmortis.senex.core;
+package com.codexmortis.senex;
 
 public class ChaosOrchestrator {
     public void initializeChaos() {
-        System.out.println("Senex оркестрирует многоязычный хаос!");
+        System.out.println("Senex: Оркестрирую многоязычный хаос!");
+    }
+    
+    public String getStatus() {
+        return "Senex: Enterprise система готова!";
     }
     
     public String getLatinMotto() {
