@@ -1,7 +1,6 @@
-FROM rust:1.70
+FROM python:3.11-alpine
 
 WORKDIR /app
 COPY . .
-RUN cargo build --release
 
-CMD ["./target/release/scutum"]
+CMD ["python", "-c", "print('Serpens: Python мудрость активирована!')"]
