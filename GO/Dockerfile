@@ -1,7 +1,6 @@
-FROM golang:1.21
+FROM golang:1.21-alpine
 
 WORKDIR /app
 COPY . .
-RUN go build -o celeritas
 
-CMD ["./celeritas"]
+CMD ["go", "run", "main.go"]
