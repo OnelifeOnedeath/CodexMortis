@@ -4,19 +4,35 @@ services:
   gladius-csharp:
     build: ./CSharp
     container_name: codex-gladius
-    command: dotnet run --project Gladius.csproj
 
   serpens-python:
-    build: ./Python  
+    build: ./Python
     container_name: codex-serpens
-    command: python -c "from serpens.core import Serpens; print(Serpens().analyze_chaos())"
 
   celeritas-go:
     build: ./Go
     container_name: codex-celeritas
-    command: ./celeritas
 
   scutum-rust:
-    build: ./Rust
-    container_name: codex-scutum  
-    command: ./scutum
+    build: ./Rust  
+    container_name: codex-scutum
+
+  senex-java:
+    build: ./Java
+    container_name: codex-senex
+
+  spiritus-javascript:
+    build: ./JavaScript
+    container_name: codex-spiritus
+
+  antiquus-php:
+    build: ./PHP
+    container_name: codex-antiquus
+
+  pulcher-swift:
+    build: ./Swift
+    container_name: codex-pulcher
+
+  novus-kotlin:
+    build: ./Kotlin
+    container_name: codex-novus
