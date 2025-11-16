@@ -1,6 +1,5 @@
 FROM rust:1.70-alpine
-
 WORKDIR /app
 COPY . .
-
-CMD ["cargo", "run"]
+RUN cargo build --release
+CMD ["./target/release/scutum"]
