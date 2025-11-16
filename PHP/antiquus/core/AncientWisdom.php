@@ -1,17 +1,13 @@
 <?php
 
 class AncientWisdom {
-    private string $motto = "Codex Mortis - Unus Vita, Unus Mors";
+    private string $motto = "PHP ex Antiquus - Sapientia Antiqua";
     
     public function awaken(): string {
-        return "Antiquus: Вечная сила Web готова служить Codex Mortis!";
+        return "Antiquus: Вечная сила Web для Codex Mortis!";
     }
     
-    public function proclaimLatinMotto(): string {
-        return "PHP ex antiquitate: \"{$this->motto}\"";
-    }
-    
-    public function manageChaos(): string {
-        return "Древний хаос Web под контролем Antiquus!";
+    public function getLatinMotto(): string {
+        return $this->motto;
     }
 }
