@@ -10,3 +10,31 @@ services:
   celeritas-go:
     build: ./Go
     container_name: codex-celeritas
+
+  scutum-rust:
+    build: ./Rust
+    container_name: codex-scutum
+
+  senex-java:
+    build: ./Java
+    container_name: codex-senex
+
+  spiritus-javascript:
+    build: ./JavaScript
+    container_name: codex-spiritus
+
+  antiquus-php:
+    build: ./PHP
+    container_name: codex-antiquus
+
+  pulcher-swift:
+    build: ./Swift
+    container_name: codex-pulcher
+
+  novus-kotlin:
+    build: ./Kotlin
+    container_name: codex-novus
+
+  famulus-bash:
+    build: ./Bash
+    container_name: codex-famulus
