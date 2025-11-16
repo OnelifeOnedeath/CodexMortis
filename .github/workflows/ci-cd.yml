@@ -1,0 +1,23 @@
+name: Codex Mortis CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build all containers
+      run: docker-compose build
+      
+    - name: Test C# Core
+      run: cd CSharp && dotnet test
+      
+    - name: Test Python
+      run: cd Python && python -c "from serpens.core import Serpens; print('Python OK')"
