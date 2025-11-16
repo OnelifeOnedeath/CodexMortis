@@ -1,5 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17
 WORKDIR /app
 COPY . .
-RUN ./gradlew build
-CMD ["./gradlew", "run"]
+CMD ["kotlin", "Novus.kt"]
