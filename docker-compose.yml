@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  gladius-csharp:
+    build: ./CSharp
+    container_name: codex-gladius
+    command: dotnet run --project Gladius.csproj
+
+  serpens-python:
+    build: ./Python  
+    container_name: codex-serpens
+    command: python -c "from serpens.core import Serpens; print(Serpens().analyze_chaos())"
+
+  celeritas-go:
+    build: ./Go
+    container_name: codex-celeritas
+    command: ./celeritas
+
+  scutum-rust:
+    build: ./Rust
+    container_name: codex-scutum  
+    command: ./scutum
