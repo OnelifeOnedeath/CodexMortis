@@ -1,8 +1,9 @@
 <?php
 require_once 'core/AncientWisdom.php';
 
-echo "ANTIQUUS: Древняя мудрость PHP пробуждена!\n";
+echo "ANTIQUUS: Древняя мудрость PHP для Codex Mortis!\n";
 
 $wisdom = new AncientWisdom();
 echo $wisdom->awaken() . "\n";
-echo $wisdom->proclaimLatinMotto() . "\n";
+echo "Motto: " . $wisdom->getLatinMotto() . "\n";
+?>
