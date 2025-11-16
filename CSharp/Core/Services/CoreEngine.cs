@@ -4,19 +4,13 @@ namespace CodexMortis.Core.Services
 {
     public class CoreEngine : ICoreService
     {
-        public string GetManifesto()
-        {
-            return "CODEX MORTIS - Unus Vita, Unus Mors, Decem Linguae";
-        }
-
-        public void InitializeChaos()
+        public string GetManifesto() => "CODEX MORTIS - Unus Vita, Unus Mors, Decem Linguae";
+        
+        public void InitializeChaos() 
         {
             // Хаос инициализирован!
         }
-
-        public bool IsSystemReady()
-        {
-            return false; // Хаос никогда не готов!
-        }
+        
+        public string ExecuteCommand(string command) => $"Gladius выполняет: {command}";
     }
 }
