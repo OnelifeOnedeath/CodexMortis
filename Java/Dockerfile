@@ -1,5 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17
 WORKDIR /app
 COPY . .
-RUN javac src/main/java/com/codexmortis/senex/*.java
 CMD ["java", "-cp", "src/main/java", "com.codexmortis.senex.Senex"]
