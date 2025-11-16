@@ -1,10 +1,10 @@
 package com.codexmortis.novus
 
 fun main() {
-    println("NOVUS: Современная мощь Kotlin для Codex Mortis!")
-    println("Motto: Kotlin ex Novus - Innovatio Continua")
-}
-
-fun activateNovus(): String {
-    return "Novus активирует современную Android/JVM мощь"
+    println("Novus: Kotlin современная мощь для Codex Mortis!")
+    println("Motto: Novus ex Kotlin - Innovatio Continua")
+    
+    val power = ModernPower()
+    power.activate()
+    println(power.getStatus())
 }
