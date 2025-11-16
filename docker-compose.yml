@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   gladius-csharp:
     build: ./CSharp
@@ -29,10 +27,15 @@ services:
     build: ./PHP
     container_name: codex-antiquus
 
-  pulcher-swift:
-    build: ./Swift
-    container_name: codex-pulcher
+  # Swift и Kotlin временно отключены - сложные зависимости
+  # pulcher-swift:
+  #   build: ./Swift
+  #   container_name: codex-pulcher
 
-  novus-kotlin:
-    build: ./Kotlin
-    container_name: codex-novus
+  # novus-kotlin:
+  #   build: ./Kotlin  
+  #   container_name: codex-novus
+
+  famulus-bash:
+    build: ./Bash
+    container_name: codex-famulus
