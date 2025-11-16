@@ -1,10 +1,14 @@
 export class SpiritusEngine {
     constructor() {
-        this.power = "Web Magia для Codex Mortis";
+        this.power = "Web Magia";
     }
 
     ignite() {
-        return "Spiritus: Магия интернета зажжена!";
+        console.log("Spiritus: Веб-магия зажжена!");
+    }
+
+    getStatus() {
+        return "Spiritus: Интерфейсы готовы к работе!";
     }
 
     getLatinMotto() {
