@@ -1,0 +1,16 @@
+// index.php
+<?php
+declare(strict_types=1);
+
+class Antiquus {
+    public function __construct() {
+        $this->wisdom = "Древняя сила PHP пробуждена";
+    }
+    
+    public function awaken(): string {
+        return "Antiquus: Вечная мудрость Web готова!";
+    }
+}
+
+$antiquus = new Antiquus();
+echo $antiquus->awaken();
