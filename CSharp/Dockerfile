@@ -1,9 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet publish -c Release -o /app
+RUN dotnet build -c Release
 
-FROM mcr.microsoft.com/dotnet/runtime:8.0
-WORKDIR /app
-COPY --from=build /app .
-ENTRYPOINT ["dotnet", "Gladius.dll"]
+CMD ["dotnet", "run", "--project", "Gladius.csproj"]
