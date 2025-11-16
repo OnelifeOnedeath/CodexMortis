@@ -1,8 +1,4 @@
 services:
-  gladius-csharp:
-    build: ./CSharp
-    container_name: codex-gladius
-
   serpens-python:
     build: ./Python
     container_name: codex-serpens
