@@ -1,1 +1,9 @@
-
+namespace CodexMortis.Core.Interfaces
+{
+    public interface ICoreService
+    {
+        string GetManifesto();
+        void InitializeChaos();
+        string ExecuteCommand(string command);
+    }
+}
