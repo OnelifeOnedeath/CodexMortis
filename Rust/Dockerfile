@@ -1,5 +1,5 @@
-FROM rust:1.70-alpine
+FROM rust:alpine
 WORKDIR /app
 COPY . .
-RUN cargo build --release
-CMD ["./target/release/scutum"]
+RUN cd scutum && cargo build --release
+CMD ["./scutum/target/release/scutum"]
