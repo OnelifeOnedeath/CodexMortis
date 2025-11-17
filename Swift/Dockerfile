@@ -1,4 +1,4 @@
-FROM swift:alpine
+FROM swift:5.7
 WORKDIR /app
 COPY . .
-CMD ["swift", "main.swift"]
+CMD ["swift", "pulcher/Sources/Pulcher/main.swift"]
