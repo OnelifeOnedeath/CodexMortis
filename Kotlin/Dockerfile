@@ -1,5 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk
 WORKDIR /app
 COPY . .
-RUN curl -s https://get.sdkman.io | bash
-CMD ["kotlin", "main.kt"]
+CMD ["kotlin", "novus/src/main/kotlin/Main.kt"]
