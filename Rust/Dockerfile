@@ -1,4 +1,4 @@
-FROM rust:1.70
+FROM rust:1.70-slim
 WORKDIR /app
 COPY . .
 RUN cd scutum && cargo build --release
