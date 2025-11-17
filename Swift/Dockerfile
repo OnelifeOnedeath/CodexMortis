@@ -1,4 +1,5 @@
-FROM swift:5.7-slim
-WORKDIR /app
+FROM swift:5.7
+WORKDIR /app/pulcher
 COPY . .
-CMD ["swift", "pulcher/Sources/Pulcher/main.swift"]
+RUN swift build -c release
+CMD ["./.build/release/Pulcher"]
