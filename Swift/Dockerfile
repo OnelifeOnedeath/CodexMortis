@@ -1,5 +1,4 @@
-FROM swift:5.7
+FROM swift:alpine
 WORKDIR /app
 COPY . .
-RUN swift build -c release
-CMD ["./.build/release/Pulcher"]
+CMD ["swift", "main.swift"]
