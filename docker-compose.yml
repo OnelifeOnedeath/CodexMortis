@@ -1,41 +1,30 @@
 services:
   gladius-csharp:
     build: ./CSharp
-    container_name: codex-gladius
 
   serpens-python:
     build: ./Python
-    container_name: codex-serpens
 
   celeritas-go:
     build: ./Go
-    container_name: codex-celeritas
 
-  # Временно отключаем проблемные
-  # scutum-rust:
-  #   build: ./Rust
-  #   container_name: codex-scutum
+  scutum-rust:
+    build: ./Rust
 
-  # senex-java:
-  #   build: ./Java
-  #   container_name: codex-senex
+  senex-java:
+    build: ./Java
 
   spiritus-javascript:
     build: ./JavaScript
-    container_name: codex-spiritus
 
   antiquus-php:
     build: ./PHP
-    container_name: codex-antiquus
 
-  # pulcher-swift:
-  #   build: ./Swift
-  #   container_name: codex-pulcher
+  pulcher-swift:
+    build: ./Swift
 
-  # novus-kotlin:
-  #   build: ./Kotlin
-  #   container_name: codex-novus
+  novus-kotlin:
+    build: ./Kotlin
 
   famulus-bash:
     build: ./Bash
-    container_name: codex-famulus
