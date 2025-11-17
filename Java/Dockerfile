@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM node:18-alpine
 WORKDIR /app
 COPY . .
-CMD ["java", "-cp", "src/main/java", "com.codexmortis.senex.Senex"]
+CMD ["node", "spiritus/index.js"]
