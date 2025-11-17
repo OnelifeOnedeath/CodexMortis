@@ -1,4 +1,4 @@
-FROM rust:alpine
+FROM rust:1.70
 WORKDIR /app
 COPY . .
 RUN cd scutum && cargo build --release
