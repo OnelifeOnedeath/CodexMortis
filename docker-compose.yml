@@ -8,8 +8,8 @@ services:
   celeritas-go:
     build: ./Go
 
-  scutum-rust:
-    build: ./Rust
+  # scutum-rust:
+  #   build: ./Rust
 
   senex-java:
     build: ./Java
@@ -20,8 +20,8 @@ services:
   antiquus-php:
     build: ./PHP
 
-  pulcher-swift:
-    build: ./Swift
+  # pulcher-swift:
+  #   build: ./Swift
 
   novus-kotlin:
     build: ./Kotlin
