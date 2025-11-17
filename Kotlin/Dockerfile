@@ -1,5 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk
 WORKDIR /app
 COPY . .
-# Kotlin нужно компилировать через gradle
-CMD ["./novus/gradlew", "-p", "novus", "run"]
+CMD ["kotlin", "-cp", "novus/src/main/kotlin", "MainKt"]
