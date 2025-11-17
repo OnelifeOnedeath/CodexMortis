@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim  
 WORKDIR /app
 COPY . .
-CMD ["kotlin", "-cp", "novus/src/main/kotlin", "MainKt"]
+CMD ["echo", "Novus: Kotlin для Codex Mortis!"]
