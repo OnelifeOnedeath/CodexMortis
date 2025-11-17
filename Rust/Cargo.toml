@@ -3,4 +3,8 @@ name = "scutum"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "scutum"
+path = "src/main.rs"
+
 [dependencies]
